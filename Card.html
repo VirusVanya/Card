@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="Card.css">
+  <title>Your first card</title>
+</head>
+<body>
+  <div class="Card">
+    <img class="Microchip" src="add.png">
+    <div class="Name">
+      <p>DISCOVER</p>
+    </div>
+    <div class="Number">
+      <p id="num">0000 0000 0000 0000</p>
+    </div>
+    <div class="Owner">
+      <label for="owner">Card holder</label><br>
+      <p name="owner" id="nameElement" class="text">Name Surname</p>
+    </div>
+    <div class="Date">
+      <label for="date">Expire date</label><br>
+      <div name="date" id="dateElement">
+        <p class="text" id="text1">12</p>
+        <p class="text" id="text2"> / </p>
+        <p class="text" id="text3">2024</p>
+      </div>
+    </div>
+  </div>
+  <form class="Form">
+    <div class="NumberF">
+      <b class="Bold" id="number">Card number</b><br>
+      <input type="text" class="Input" id="newNumber" placeholder="Set a card number">
+    </div>
+    <div class="NameF">
+      <b class="Bold" id="name">Name</b><br>
+      <input type="text" class="Input" id="newName" placeholder="Set your name">
+    </div>
+    <div class="Selector1">
+      <b class="Bold" id="date">Exp date</b><br>
+      <select id="newDate">
+       <option value="January">January</option>
+       <option value="February">February</option>
+       <option value="March">March</option>
+       <option value="April">April</option>
+       <option value="May">May</option>
+       <option value="June">June</option>
+       <option value="July">July</option>
+       <option value="August">August</option>
+       <option value="September">September</option>
+       <option value="October">October</option>
+       <option value="November">November</option>
+       <option value="December">December</option>
+      </select>
+    </div>
+    <div class="Selector2">
+      <select>
+       <option value="2022">2022</option>
+       <option value="2023">2023</option>
+       <option value="2024">2024</option>
+       <option value="2025">2025</option>
+       <option value="2026">2026</option>
+       <option value="2027">2027</option>
+      </select>
+    </div>
+    <div class="CVV">
+      <b class="Bold" id="cvv1">CVV</b><br>
+      <input type="text" id="cvv2" placeholder="Set a CVV">
+    </div>
+  </form>
+  <script type="text/javascript" src="Card.js"></script>
+</body>
+</html>
